@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+      let companiesObj =  
+      [
+    {
+        "name": "amazon",
+        "numberOfEmployees": 10000,
+        "ceo": "Carol",
+        "rating": 3.6
+    },
+    {
+        "name": "tiger shop",
+        "numberOfEmployees": 5,
+        "ceo": null,
+        "rating": 4.5
+    }
+]
+
+let companiesStr =  
+      `[
+    {
+        "name": "amazon",
+        "numberOfEmployees": 10000,
+        "ceo": "Carol",
+        "rating": 3.6
+    },
+    {
+        "name": "tiger shop",
+        "numberOfEmployees": 5,
+        "ceo": null,
+        "rating": 4.5
+    }
+]`
+
+console.log(companiesObj) 
+console.log(companiesStr)
+console.log(JSON.parse(companiesStr))
+console.log(JSON.parse(companiesStr)[1].name)
+    </script>
+</body>
+</html>
